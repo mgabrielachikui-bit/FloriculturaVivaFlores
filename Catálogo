@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Viva Flores - Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #fffaf6; color: #2b2b2b; font-family: 'Poppins', sans-serif; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #ff4081, #ff6b6b); text-align: center; padding: 50px 20px; color: white; box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2); }
+        header h1 { font-family: 'Cinzel', serif; font-size: 2.8rem; letter-spacing: 2px; margin-bottom: 8px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); }
+        header p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.4rem; letter-spacing: 1px; opacity: 0.95; }
+        .catalogo-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; }
+        .card-produto { background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.06); display: flex; flex-direction: column; border: 2px solid #ffe3ec; padding: 10px; transition: transform 0.3s ease; }
+        .card-produto:hover { transform: translateY(-8px); }
+        
+        /* Estilo da Foto */
+        .foto-produto {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: #ffe3ec;
+        }
+
+        .info-produto { padding: 15px 5px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; }
+        .info-produto h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #ff4081; margin-bottom: 12px; font-weight: 700; }
+        .info-produto .descricao { font-size: 0.95rem; color: #555; margin-bottom: 20px; flex-grow: 1; }
+        .info-produto .preco { font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: 700; color: #ff1744; margin-bottom: 20px; background-color: #fff0f3; padding: 5px 15px; border-radius: 20px; display: inline-block; }
+        .btn-whatsapp { display: block; background: linear-gradient(135deg, #00e676, #00c853); color: white; text-decoration: none; padding: 14px 20px; border-radius: 50px; font-weight: 600; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(0, 230, 118, 0.3); }
+        footer { text-align: center; padding: 40px 20px; background: #2b2b2b; color: white; margin-top: 80px; border-top: 4px solid #ff4081; }
+        footer .f-slogan { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.2rem; color: #ff6b6b; margin-bottom: 10px; }
+        @media (max-width: 600px) { header h1 { font-size: 2.1rem; } header p { font-size: 1.1rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Floricultura Viva Flores</h1>
+        <p>Flores em Vida 🌸</p>
+    </header>
+
+    <main class="catalogo-container">
+        <div class="grid-produtos">
+
+            <!-- PRODUTO 1 -->
+            <div class="card-produto">
+                <!-- COLE O LINK DA SUA FOTO 1 ENTRE AS ASPAS ABAIXO -->
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=500" alt="Buquê de Rosas" class="foto-produto">
+                <div class="info-produto">
+                    <h3>Buquê Clássico de Rosas</h3>
+                    <p class="descricao">12 rosas vermelhas selecionadas com folhagens nobres e acabamento em cetim impecável.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <a href="https://wa.me/5571999771399?text=Olá! Gostaria de encomendar o Buquê Clássico de Rosas na Viva Flores." target="_blank" class="btn-whatsapp">
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUTO 2 -->
+            <div class="card-produto">
+                <!-- COLE O LINK DA SUA FOTO 2 ENTRE AS ASPAS ABAIXO -->
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=500" alt="Buquê Campo" class="foto-produto">
+                <div class="info-produto">
+                    <h3>Encanto do Campo</h3>
+                    <p class="descricao">Mix exuberante de flores do campo coloridas, girassóis radiantes e gipsófilas. Alegre e vibrante.</p>
+                    <p class="preco">R$ 120,00</p>
+                    <a href="https://wa.me/5571999771399?text=Olá! Gostaria de encomendar o Buquê Encanto do Campo na Viva Flores." target="_blank" class="btn-whatsapp">
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUTO 3 -->
+            <div class="card-produto">
+                <!-- COLE O LINK DA SUA FOTO 3 ENTRE AS ASPAS ABAIXO -->
+                <img src="https://images.unsplash.com/photo-1587334206502-7b76f54546c7?w=500" alt="Orquídea" class="foto-produto">
+                <div class="info-produto">
+                    <h3>Elegância de Orquídea</h3>
+                    <p class="descricao">Linda orquídea Phalaenopsis nobre em uma embalagem luxuosa especial para presente.</p>
+                    <p class="preco">R$ 180,00</p>
+                    <a href="https://wa.me/5571999771399?text=Olá! Gostaria de encomendar a Elegância de Orquídea na Viva Flores." target="_blank" class="btn-whatsapp">
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p class="f-slogan">Viva Flores — Flores em Vida</p>
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
